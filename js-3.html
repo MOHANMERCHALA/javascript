@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><title>
+        javascript 3
+    </title></head>
+    <body>
+        <script type="text/javascript">
+        function partyanimal(nam){//template for making partyanimal objects
+            this.name=nam;
+            this.x=0;
+            console.log("Hi i am "+nam);
+            this.party=function(){
+                this.x=this.x+1;
+                console.log("name:"+this.x);////
+            }//this is not anyonymous function because it is under the party object & partyanimal is template
+        }
+        an=new partyanimal("mohan");//create a partyanimal object
+
+        j=new partyanimal("sunil");
+        j.party();//the the object to run the party() code
+        j.party();
+        an.party();
+        </script>
+    </body>
+</html>

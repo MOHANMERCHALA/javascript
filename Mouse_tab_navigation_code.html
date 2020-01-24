@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <head>
+ <script type="text/javascript" language="javascript">
+function p(color){
+    document.getElementById("rb").style.backgroundColor = color;
+    document.getElementById("rb").style.color = "white";
+    document.getElementById("pb").style.backgroundColor ="#33333300";
+    document.getElementById("pb").style.color = "red";
+}
+function r(color){
+    document.getElementById("rb").style.backgroundColor = color;
+    document.getElementById("rb").style.color = "white";
+    document.getElementById("pb").style.backgroundColor ="#33333300";
+    document.getElementById("pb").style.color = color;
+ }
+ function o(color){
+     document.getElementById("rb").style.backgroundColor = "#33333300";
+     document.getElementById("rb").style.color = "#fd4c2d";
+     document.getElementById("pb").style.backgroundColor = "red";
+     document.getElementById("pb").style.color = "white";
+ }
+   </script>
+     <style type="text/css">
+.pbtn {
+    background-color: red;
+    color: white;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+	border: 2px solid #fd4c2d;
+	outline: none;
+}
+.rbtn {
+	background-color: #33333300;
+    color: #fd4c2d;
+    padding: 14px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+	border: 2px solid #fd4c2d;
+	outline: none;
+}
+
+    </style>
+    </head>
+<body style="background-color:black;">
+<table>
+<tr><td><input type="button" name="register" value="Next" class="pbtn" id="pb" onmouseover="p('red');" onmouseout="o('white');">
+ <input type="button" value="Reset" name="reset" class="rbtn" id="rb" onmouseover="r('red');" onmouseout="o('white');"></td>
+  </tr>
+  </table>
+</body>
+</html>
